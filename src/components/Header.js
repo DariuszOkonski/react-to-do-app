@@ -4,28 +4,30 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <header className="header">
-      <div className="container">
-        <div className="header__left">
-          <p className="header__paragraph">ToDo-App</p>
-          <NavLink to="/about" className="header__about">About</NavLink>
+      <div className="header__container container">
+
+        <div className="header__left info">
+          <p className="info__paragraph">ToDo-App</p>
+          <NavLink to="/about" className="info__about">About</NavLink>
         </div>
 
-        <nav className="header__navigation">
-          <ul className="header__items">
-            <li className="header__item">
-              <NavLink to="/">New Task</NavLink>
+        <nav className="header__right nav">
+          <ul className="nav__items">
+            <li>
+              <NavLink exact className="nav__item" to="/">New Task</NavLink>
             </li>
-            <li className="header__item">
-              <NavLink to="/todo">Tasks To Do</NavLink>
+            <li>
+              <NavLink className="nav__item" to="/todo">Tasks To Do</NavLink>
             </li>
-            <li className="header__item">
-              <NavLink to="/done">Done Tasks</NavLink>
+            <li>
+              <NavLink className="nav__item" to="/done">Done Tasks</NavLink>
             </li>
-            <li className="header__item">
-              <NavLink to="/removed">Removed Tasks</NavLink>
+            <li>
+              <NavLink className="nav__item" to="/removed">Removed Tasks</NavLink>
             </li>
           </ul>
         </nav>
+
       </div>
     </header>
   );
