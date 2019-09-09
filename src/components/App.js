@@ -2,8 +2,12 @@ import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <h1>ToDO - App</h1>
+    <div className="app">
+
+      <header className="header">
+
+      </header>
+
     </div>
   );
 }
