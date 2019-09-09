@@ -1,0 +1,2 @@
+(window["webpackJsonp008-to-do-app"]=window["webpackJsonp008-to-do-app"]||[]).push([[0],{3:function(e,n,t){e.exports=t(9)},8:function(e,n,t){},9:function(e,n,t){"use strict";t.r(n);var o=t(0),a=t.n(o),p=t(2),r=t.n(p);var c=function(){return a.a.createElement("div",{className:"App"},a.a.createElement("h1",null,"ToDO - App"))};t(8);r.a.render(a.a.createElement(c,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.79e9af4d.chunk.js.map
