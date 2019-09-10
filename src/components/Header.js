@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__container container">
+      <div className="header__container">
 
         <div className="header__left info">
           <p className="info__paragraph">ToDo-App</p>
@@ -17,13 +17,13 @@ const Header = () => {
               <NavLink exact className="nav__item" to="/">New Task</NavLink>
             </li>
             <li>
-              <NavLink className="nav__item" to="/todo">Tasks To Do</NavLink>
+              <NavLink className="nav__item" to="/todo">Tasks</NavLink>
             </li>
             <li>
-              <NavLink className="nav__item" to="/done">Done Tasks</NavLink>
+              <NavLink className="nav__item" to="/done">Done</NavLink>
             </li>
             <li>
-              <NavLink className="nav__item" to="/removed">Removed Tasks</NavLink>
+              <NavLink className="nav__item" to="/removed">Removed</NavLink>
             </li>
           </ul>
         </nav>
