@@ -176,6 +176,17 @@ a {
   }
 }
 
+.about__paragraph {
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .about__paragraph {
+    font-size: 2.6rem;
+  }
+}
+
 .footer {
   background-color: #DF4957;
   display: -webkit-box;

@@ -1,0 +1,10 @@
+.about {
+  &__paragraph {
+    font-size: 1.6rem;
+    text-align: right;
+
+    @media(min-width: 768px) {
+      font-size: 2.6rem;
+    }
+  }
+}
