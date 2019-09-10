@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import NewTask from './NewTask';
 import About from './About';
 import Error from './Error';
 
@@ -9,6 +10,7 @@ const Content = () => {
 
       <div className="content__container">
         <Switch>
+          <Route exact path='/' component={NewTask} />
           <Route path='/about' component={About} />
           <Route component={Error} />
         </Switch>
