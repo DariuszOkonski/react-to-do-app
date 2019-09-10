@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 *,
 *::before,
 *::after {
@@ -8,7 +9,7 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 10px;
 }
 
@@ -55,6 +56,15 @@ a {
   min-height: 50px;
 }
 
+@media (min-width: 768px) {
+  .app .header {
+    min-height: 100px;
+  }
+  .app .footer {
+    min-height: 65px;
+  }
+}
+
 .header {
   background-color: #DF4957;
   padding: 5px;
@@ -93,6 +103,15 @@ a {
   border-color: white;
 }
 
+@media (min-width: 768px) {
+  .info__paragraph {
+    font-size: 3.6rem;
+  }
+  .info__about {
+    font-size: 3.2rem;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,6 +138,12 @@ a {
   border-bottom: 2px solid transparent;
 }
 
+@media (min-width: 768px) {
+  .nav__item {
+    font-size: 2.6rem;
+  }
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,10 +162,18 @@ a {
       align-self: stretch;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  max-width: 900px;
-  background-color: yellow;
-  border: 2px solid black;
-  margin: 20px;
+  max-width: 600px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .content__container {
+    margin: 20px;
+    padding: 20px;
+  }
 }
 
 .footer {
@@ -159,5 +192,11 @@ a {
 .footer__paragraph {
   color: white;
   font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .footer__paragraph {
+    font-size: 2.6rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

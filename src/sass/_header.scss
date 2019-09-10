@@ -29,6 +29,16 @@
   .active {
     border-color: white;
   }
+
+  @media(min-width: 768px) {
+    &__paragraph {
+      font-size: 3.6rem;
+    }
+
+    &__about {
+      font-size: 3.2rem;
+    }
+  }
 }
 
 .nav {
@@ -48,5 +58,9 @@
     margin-right: 10px;
     font-size: 1.2rem;
     border-bottom: 2px solid transparent;
+
+    @media(min-width: 768px) {
+      font-size: 2.6rem;
+    }
   }
 }
