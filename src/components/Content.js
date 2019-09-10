@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import About from './About';
+import Error from './Error';
 
 const Content = () => {
   return (
@@ -9,6 +10,7 @@ const Content = () => {
       <div className="content__container">
         <Switch>
           <Route path='/about' component={About} />
+          <Route component={Error} />
         </Switch>
       </div>
 
