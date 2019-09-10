@@ -2,5 +2,18 @@
   width: 100%;
   min-height: 100vh;
 
-  // header {}
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    min-height: 75px;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+
+  .footer {
+    min-height: 50px;
+  }
 }

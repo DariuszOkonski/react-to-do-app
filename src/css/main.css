@@ -30,11 +30,31 @@ a {
 .app {
   width: 100%;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .header {
+  min-height: 75px;
+}
+
+.app .content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.app .footer {
+  min-height: 50px;
 }
 
 .header {
   background-color: #DF4957;
-  min-height: 75px;
   padding: 5px;
   color: white;
   display: -webkit-box;
@@ -95,5 +115,23 @@ a {
   margin-right: 10px;
   font-size: 1.2rem;
   border-bottom: 2px solid transparent;
+}
+
+.footer {
+  background-color: #DF4957;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__paragraph {
+  color: white;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
