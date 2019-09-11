@@ -341,6 +341,41 @@ a {
   }
 }
 
+.removed-item__header {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .removed-item__header {
+    font-size: 3.6rem;
+  }
+}
+
+.single-removed {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px auto;
+}
+
+.single-removed__issue {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .single-removed__issue {
+    font-size: 1.6rem;
+  }
+  .single-removed .btn {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
+}
+
 .about__paragraph {
   font-size: 1.6rem;
   text-align: right;

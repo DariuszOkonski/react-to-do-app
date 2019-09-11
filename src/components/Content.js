@@ -6,6 +6,7 @@ import Error from './Error';
 
 import TaskList from './Tasks/TaskList';
 import DoneList from './Done/DoneList';
+import RemovedList from './Removed/RemovedList';
 
 const Content = () => {
   return (
@@ -16,6 +17,7 @@ const Content = () => {
           <Route exact path='/' component={NewTask} />
           <Route path='/todo' component={TaskList} />
           <Route path='/done' component={DoneList} />
+          <Route path='/removed' component={RemovedList} />
           <Route path='/about' component={About} />
           <Route component={Error} />
         </Switch>
