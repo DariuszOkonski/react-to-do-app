@@ -1,0 +1,27 @@
+//================ Utilities
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-small {
+  display: block;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: lighten(#c4c4c4, 10);
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: lighten(#c4c4c4, 10);
+  cursor: pointer;
+}
