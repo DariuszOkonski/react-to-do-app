@@ -6,10 +6,11 @@
   margin-right: auto;
 }
 
-.btn-small {
-  display: block;
+.btn {
+  display: inline-block;
   font-size: 1.2rem;
   padding: 5px;
+  margin: 5px 5px 0 0;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   background-color: lighten(#c4c4c4, 10);
@@ -17,9 +18,10 @@
 }
 
 .btn-large {
-  display: block;
+  display: inline-block;
   font-size: 1.6rem;
   padding: 10px 15px;
+  margin: 10px 10px 0 0;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   background-color: lighten(#c4c4c4, 10);

@@ -30,6 +30,28 @@ a {
   margin-right: auto;
 }
 
+.btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin: 5px 5px 0 0;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #dedede;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  margin: 10px 10px 0 0;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #dedede;
+  cursor: pointer;
+}
+
 .app {
   width: 100%;
   min-height: 100vh;
@@ -237,6 +259,30 @@ a {
     padding: 10px 15px;
     cursor: pointer;
   }
+}
+
+.task-item__header {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.single-task {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px auto;
+}
+
+.single-task__issue {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.single-task__deadline {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
 .about__paragraph {
