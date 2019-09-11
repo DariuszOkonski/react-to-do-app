@@ -5,6 +5,7 @@ import About from './About';
 import Error from './Error';
 
 import TaskItem from './Tasks/TaskItem';
+import DoneItem from './Done/DoneItem';
 
 const Content = () => {
   return (
@@ -14,6 +15,7 @@ const Content = () => {
         <Switch>
           <Route exact path='/' component={NewTask} />
           <Route path='/todo' component={TaskItem} />
+          <Route path='/done' component={DoneItem} />
           <Route path='/about' component={About} />
           <Route component={Error} />
         </Switch>

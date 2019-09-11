@@ -268,6 +268,12 @@ a {
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .task-item__header {
+    font-size: 3.6rem;
+  }
+}
+
 .single-task {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
@@ -283,6 +289,56 @@ a {
 .single-task__deadline {
   font-size: 1.2rem;
   margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .single-task__issue, .single-task__deadline {
+    font-size: 1.6rem;
+  }
+  .single-task .btn {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
+}
+
+.done-item__header {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .done-item__header {
+    font-size: 3.6rem;
+  }
+}
+
+.single-done {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px auto;
+}
+
+.single-done__issue {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.single-done__deadline {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .single-done__issue, .single-done__deadline {
+    font-size: 1.6rem;
+  }
+  .single-done .btn {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
 }
 
 .about__paragraph {
