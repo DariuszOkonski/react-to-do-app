@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TaskItem = () => {
+const DoneList = () => {
   return (
     <div className="done-item">
       <h1 className="done-item__header">Done Tasks (3)</h1>
@@ -15,10 +15,8 @@ const TaskItem = () => {
         <button className="btn">Remove</button>
       </div>
 
-
-
     </div>
   );
 }
 
-export default TaskItem;
+export default DoneList;

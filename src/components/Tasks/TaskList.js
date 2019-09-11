@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TaskItem = () => {
+const TaskList = () => {
   return (
     <div className="task-item">
       <h1 className="task-item__header">Tasks To Do (3)</h1>
@@ -16,4 +16,4 @@ const TaskItem = () => {
   );
 }
 
-export default TaskItem;
+export default TaskList;

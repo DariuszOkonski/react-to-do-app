@@ -4,8 +4,8 @@ import NewTask from './NewTask';
 import About from './About';
 import Error from './Error';
 
-import TaskItem from './Tasks/TaskItem';
-import DoneItem from './Done/DoneItem';
+import TaskList from './Tasks/TaskList';
+import DoneList from './Done/DoneList';
 
 const Content = () => {
   return (
@@ -14,8 +14,8 @@ const Content = () => {
       <div className="content__container">
         <Switch>
           <Route exact path='/' component={NewTask} />
-          <Route path='/todo' component={TaskItem} />
-          <Route path='/done' component={DoneItem} />
+          <Route path='/todo' component={TaskList} />
+          <Route path='/done' component={DoneList} />
           <Route path='/about' component={About} />
           <Route component={Error} />
         </Switch>
