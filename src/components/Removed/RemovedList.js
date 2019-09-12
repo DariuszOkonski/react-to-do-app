@@ -1,4 +1,5 @@
 import React from 'react';
+import RemovedItem from './RemovedItem';
 
 const RemovedList = () => {
   return (
@@ -6,12 +7,7 @@ const RemovedList = () => {
       <h1 className="removed-item__header">Removed Tasks (3)</h1>
       <button className="btn">Remove All</button>
 
-      <div className="single-removed">
-        <p className="single-removed__issue">
-          Go to hairdresser
-        </p>
-        <button className="btn">Remove</button>
-      </div>
+      <RemovedItem />
 
     </div>
   );
