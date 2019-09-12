@@ -12,6 +12,7 @@ const DoneList = () => {
         <p className="single-done__deadline">
           Done at: 18/02/2020 - 10.49.23
         </p>
+        <button className="btn">Store</button>
         <button className="btn">Remove</button>
       </div>
 

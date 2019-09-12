@@ -352,6 +352,10 @@ a {
   .removed-item__header {
     font-size: 3.6rem;
   }
+  .removed-item .btn {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+  }
 }
 
 .single-removed {
