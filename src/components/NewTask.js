@@ -7,7 +7,7 @@ class NewTask extends React.Component {
   state = {
     text: '',
     priority: false,
-    date: '',
+    date: minDate,
   }
 
   handleTextChange = (e) => {
@@ -37,24 +37,21 @@ class NewTask extends React.Component {
     }
 
     if (this.state.date.length === 0) {
-      alert('Choose deadline date');
+      alert('Choose deadline date...');
       return;
     }
 
-    console.log(this.state.text, this.state.priority, this.state.date);
+    this.props.onHandleAddNewTask(this.state);
 
     this.setState({
       text: '',
       priority: false,
       date: minDate,
-    })
+    });
+
+    alert('Task has been added...');
   }
 
-  componentDidMount() {
-    this.setState({
-      date: minDate,
-    })
-  }
 
   render() {
     const { text, priority, date } = this.state;
