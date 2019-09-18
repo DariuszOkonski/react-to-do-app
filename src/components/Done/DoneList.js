@@ -1,12 +1,12 @@
 import React from 'react';
 import DoneItem from './DoneItem';
 
-const DoneList = () => {
+const DoneList = ({ doneArr }) => {
   return (
     <div className="done-item">
-      <h1 className="done-item__header">Done Tasks (3)</h1>
+      <h1 className="done-item__header">{`Done Tasks (${doneArr.length})`}</h1>
 
-      <DoneItem />
+      {doneArr.map(task => <DoneItem key={task.id} {...task} />)}
 
     </div>
   );

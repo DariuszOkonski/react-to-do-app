@@ -1,14 +1,17 @@
 import React from 'react';
 
-const DoneItem = () => {
+// id: 1, task: 'clean a car', priority: false, deadline: '18.02.2019', doneAt: null
+
+const DoneItem = ({ id, task, deadline, doneAt }) => {
   return (
     <div className="single-done">
       <p className="single-done__issue">
-        Go to hairdresser - (done till - 20/02/2019)
+        {task} - (done till - {deadline})
         </p>
       <p className="single-done__deadline">
-        Done at: 18/02/2020 - 10.49.23
-        </p>
+        Done at: {doneAt}
+      </p>
+
       <button className="btn">Store</button>
       <button className="btn">Remove</button>
     </div>
