@@ -48,6 +48,19 @@ class Content extends Component {
     })
   }
 
+  handleMoveFromTasksToDone = (id) => {
+    console.log(id);
+    const tasksArr = [...this.state.tasksArr];
+    const index = tasksArr.findIndex(task => task.id === id);
+    const removedTask = tasksArr.splice(index, 1);
+    const doneArr = [...this.state.doneArr, { ...removedTask[0] }];
+
+    this.setState({
+      tasksArr,
+      doneArr,
+    })
+  }
+
   render() {
     const { tasksArr } = this.state;
     return (
@@ -62,7 +75,9 @@ class Content extends Component {
             <Route path='/todo' render={(props) =>
               (<TaskList
                 tasksArr={tasksArr}
-                onHandleRemoveFromTasks={this.handleRemoveFromTasks} />)}
+                onHandleRemoveFromTasks={this.handleRemoveFromTasks}
+                onHandleMoveFromTasksToDone={this.handleMoveFromTasksToDone}
+              />)}
             />
 
             <Route path='/done' component={DoneList} />
