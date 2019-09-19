@@ -1,14 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const RemovedItem = () => {
+const RemovedItem = ({ id, task, onRemove }) => {
   return (
     <div className="single-removed">
       <p className="single-removed__issue">
-        Go to hairdresser
-    </p>
-      <button className="btn">Remove</button>
+        {task}
+      </p>
+
+      <button
+        className="btn"
+        onClick={() => onRemove(id)}
+      >Remove</button>
     </div>
   );
+}
+
+RemovedItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  task: PropTypes.string.isRequired,
+  onRemove: PropTypes.func.isRequired,
 }
 
 export default RemovedItem;

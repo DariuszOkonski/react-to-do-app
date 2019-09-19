@@ -17,11 +17,13 @@ class Content extends Component {
     doneArr: [
       { id: 1, task: 'clean a car', priority: false, deadline: '18.02.2019', doneAt: null },
       { id: 2, task: 'make shopping', priority: false, deadline: '14.03.2019', doneAt: null },
+
+    ],
+    removedArr: [
       { id: 3, task: 'walk a dog', priority: true, deadline: '23.04.2019', doneAt: null },
       { id: 4, task: 'go to a party', priority: true, deadline: '22.03.2019', doneAt: null },
       { id: 5, task: 'go sleep early', priority: false, deadline: '13.12.2019', doneAt: null },
     ],
-    removedArr: [],
   }
 
   handleAddNewTask = (newTaskState) => {
@@ -90,6 +92,23 @@ class Content extends Component {
     })
   }
 
+  handleRemoveTaskFromRemoved = (id) => {
+    let removedArr = [...this.state.removedArr];
+    removedArr = removedArr.filter(task => task.id !== id);
+
+    this.setState({
+      removedArr
+    })
+  }
+
+  handleRemoveAllFromRemoved = () => {
+    const removedArr = [];
+
+    this.setState({
+      removedArr
+    })
+  }
+
   render() {
     const { tasksArr, doneArr, removedArr } = this.state;
     return (
@@ -117,7 +136,14 @@ class Content extends Component {
               />)}
             />
 
-            <Route path='/removed' component={RemovedList} />
+            <Route path='/removed' render={() =>
+              (<RemovedList
+                removedArr={removedArr}
+                onHandleRemoveTaskFromRemoved={this.handleRemoveTaskFromRemoved}
+                onHandleRemoveAllFromRemoved={this.handleRemoveAllFromRemoved}
+              />)}
+            />
+
             <Route path='/about' component={About} />
             <Route component={Error} />
           </Switch>
