@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer__paragraph">
-        ToDo - App &#169; All Rights Reserved
+        ToDo - App &#169; 2019 Dariusz Okonski
       </p>
     </footer>
   );
