@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const DoneItem = ({ id, task, deadline, doneAt, onStore }) => {
+const DoneItem = ({ id, task, deadline, doneAt, onStore, onRemove }) => {
   return (
     <div className="single-done">
       <p className="single-done__issue">
@@ -16,8 +16,12 @@ const DoneItem = ({ id, task, deadline, doneAt, onStore }) => {
         className="btn"
         onClick={() => onStore(id)}
       >Store</button>
-      <button className="btn">Remove</button>
-    </div>
+
+      <button
+        className="btn"
+        onClick={() => onRemove(id)}
+      >Remove</button>
+    </div >
   );
 }
 
@@ -27,6 +31,7 @@ DoneItem.propTypes = {
   deadline: PropTypes.string.isRequired,
   doneAt: PropTypes.string,
   onStore: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired,
 }
 
 

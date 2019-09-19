@@ -75,11 +75,18 @@ class Content extends Component {
 
     const removedArr = [...this.state.removedArr, { ...removedTask[0] }];
 
-
-
     this.setState({
       doneArr,
       removedArr
+    })
+  }
+
+  handleRemoveTaskFromDone = (id) => {
+    let doneArr = [...this.state.doneArr];
+    doneArr = doneArr.filter(task => task.id !== id);
+
+    this.setState({
+      doneArr,
     })
   }
 
@@ -106,6 +113,7 @@ class Content extends Component {
               <DoneList
                 doneArr={doneArr}
                 onHandleStoreToRemoved={this.handleStoreToRemoved}
+                onHandleRemoveTaskFromDone={this.handleRemoveTaskFromDone}
               />)}
             />
 
