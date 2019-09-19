@@ -64,8 +64,6 @@ class Content extends Component {
     let removedTaskWithDoneAt = { ...removedTask[0] };
     removedTaskWithDoneAt.doneAt = new Date().toISOString().substr(0, 10) + ' - ' + new Date().toISOString().substr(11, 8);
 
-    console.log(removedTaskWithDoneAt);
-
     const doneArr = [...this.state.doneArr, removedTaskWithDoneAt];
 
     this.setState({
