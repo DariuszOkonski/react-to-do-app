@@ -20,6 +20,8 @@ const TaskList = ({ tasksArr, onHandleRemoveFromTasks, onHandleMoveFromTasksToDo
 
 TaskList.propTypes = {
   tasksArr: PropTypes.array.isRequired,
+  onHandleRemoveFromTasks: PropTypes.func.isRequired,
+  onHandleMoveFromTasksToDone: PropTypes.func.isRequired,
 }
 
 export default TaskList;

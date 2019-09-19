@@ -12,17 +12,21 @@ import RemovedList from './Removed/RemovedList';
 class Content extends Component {
   state = {
     tasksArr: [
-
-    ],
-    doneArr: [
       { id: 1, task: 'clean a car', priority: false, deadline: '18.02.2019', doneAt: null },
       { id: 2, task: 'make shopping', priority: false, deadline: '14.03.2019', doneAt: null },
-
-    ],
-    removedArr: [
       { id: 3, task: 'walk a dog', priority: true, deadline: '23.04.2019', doneAt: null },
       { id: 4, task: 'go to a party', priority: true, deadline: '22.03.2019', doneAt: null },
       { id: 5, task: 'go sleep early', priority: false, deadline: '13.12.2019', doneAt: null },
+    ],
+    doneArr: [
+      { id: 6, task: "clean a house", priority: false, deadline: "18.02.2019", doneAt: "2019-09-19 - 21:57:52" },
+      { id: 7, task: "make big shopping", priority: false, deadline: "14.03.2019", doneAt: "2019-09-19 - 21:57:53" },
+      { id: 8, task: "make cookies", priority: true, deadline: "14.03.2019", doneAt: "2019-09-19 - 21:57:53" },
+      { id: 9, task: "prepare dinner", priority: false, deadline: "14.03.2019", doneAt: "2019-09-19 - 21:57:53" },
+    ],
+    removedArr: [
+      { id: 10, task: "walk a cat", priority: true, deadline: "14.03.2019", doneAt: "2019-09-19 - 21:57:53" },
+      { id: 11, task: "drink wather", priority: false, deadline: "14.03.2019", doneAt: "2019-09-19 - 21:57:53" },
     ],
   }
 

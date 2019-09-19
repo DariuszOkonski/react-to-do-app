@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const minDate = new Date().toISOString().substr(0, 10);
 const maxDate = new Date().getFullYear() + 2 + '-12-31';
@@ -8,6 +9,10 @@ class NewTask extends React.Component {
     text: '',
     priority: false,
     date: minDate,
+  }
+
+  static propTypes = {
+    onHandleAddNewTask: PropTypes.func.isRequired,
   }
 
   handleTextChange = (e) => {
@@ -96,8 +101,6 @@ class NewTask extends React.Component {
       </div>
     );
   }
-
-
 }
 
 export default NewTask;

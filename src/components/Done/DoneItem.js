@@ -26,7 +26,7 @@ const DoneItem = ({ id, task, deadline, doneAt, onStore, onRemove }) => {
 }
 
 DoneItem.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   task: PropTypes.string.isRequired,
   deadline: PropTypes.string.isRequired,
   doneAt: PropTypes.string,

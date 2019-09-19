@@ -17,7 +17,7 @@ const RemovedItem = ({ id, task, onRemove }) => {
 }
 
 RemovedItem.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   task: PropTypes.string.isRequired,
   onRemove: PropTypes.func.isRequired,
 }
