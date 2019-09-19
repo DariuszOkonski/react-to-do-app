@@ -1,8 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// id: 1, task: 'clean a car', priority: false, deadline: '18.02.2019', doneAt: null
 
-const DoneItem = ({ id, task, deadline, doneAt }) => {
+const DoneItem = ({ id, task, deadline, doneAt, onStore }) => {
   return (
     <div className="single-done">
       <p className="single-done__issue">
@@ -12,10 +12,22 @@ const DoneItem = ({ id, task, deadline, doneAt }) => {
         Done at: {doneAt}
       </p>
 
-      <button className="btn">Store</button>
+      <button
+        className="btn"
+        onClick={() => onStore(id)}
+      >Store</button>
       <button className="btn">Remove</button>
     </div>
   );
 }
+
+DoneItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  task: PropTypes.string.isRequired,
+  deadline: PropTypes.string.isRequired,
+  doneAt: PropTypes.string,
+  onStore: PropTypes.func.isRequired,
+}
+
 
 export default DoneItem;

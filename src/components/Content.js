@@ -68,6 +68,21 @@ class Content extends Component {
     })
   }
 
+  handleStoreToRemoved = (id) => {
+    const doneArr = [...this.state.doneArr];
+    const index = doneArr.findIndex(task => task.id === id);
+    const removedTask = doneArr.splice(index, 1);
+
+    const removedArr = [...this.state.removedArr, { ...removedTask[0] }];
+
+
+
+    this.setState({
+      doneArr,
+      removedArr
+    })
+  }
+
   render() {
     const { tasksArr, doneArr, removedArr } = this.state;
     return (
@@ -90,6 +105,7 @@ class Content extends Component {
             <Route path='/done' render={() => (
               <DoneList
                 doneArr={doneArr}
+                onHandleStoreToRemoved={this.handleStoreToRemoved}
               />)}
             />
 
